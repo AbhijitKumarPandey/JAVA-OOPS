@@ -5,6 +5,7 @@ class ATM{
 	int PIN = 97083;
 	
 	public void checkPin() {
+		 
 		System.out.println("Enter your Pin");
 		Scanner sc = new Scanner(System.in);
 		int enteredPin  = sc.nextInt();
@@ -24,6 +25,7 @@ class ATM{
 	 
 
 	public void menu() {
+		System.out.println("-----WELL COME TO SBI BANK--------")
 		 System.out.println("Enter your Choice");
 		 System.out.println("1. Check A/c Balance");
 		 System.out.println("2. Withdraw Money ");
@@ -44,7 +46,7 @@ class ATM{
 			 depositeMoney();
 		 }
 		 else if(option==4) {
-			 return;
+			  System.out.println("Thank You Have A Nice Day") 
 		 }
 		 else {
 			 System.out.println("Enter A Valid Choice");
@@ -82,8 +84,8 @@ public class ATM_Machine {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ATM  obj = new ATM ();
-		obj.checkPin();
+		ATM  A1 = new ATM ();
+		  A1.checkPin();
 		
 
 	}
